@@ -27,10 +27,10 @@ and replaces it with the string "even index" */
 var arr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 
 function replaceEvens(arr) {
-    for (var i = 0; i < arr.length; i += 2) {
-        (arr.splice(i,1,"even index"))
-        console.log(arr)
+    for (let i = 0; i < arr.length; i += 2) {
+        arr.splice(i,1,"even index")
     }
+    console.log(arr)
 }
 replaceEvens(arr)
 //Expected output
@@ -77,3 +77,6 @@ function basicOp(operation, value1, value2)
         return value1 / value2
     }
 }
+
+
+
